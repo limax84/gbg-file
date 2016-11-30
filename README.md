@@ -2,6 +2,8 @@
 
 ###Install
 ```
+git clone git@github.com:limax84/gbg-file.git
+cd gbg-file
 npm i
 ```
 
