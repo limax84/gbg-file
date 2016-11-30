@@ -24,7 +24,7 @@ app.all('/activation', function(req, res) {
     // Logs the request in a file (To save CPU and SDCARD for example)
     var fd = fs.openSync(path.join(__dirname, 'requests.log'), 'a+');
     req.body.timestamp = new Date().getTime();
-    fs.writeSync(fd, JSON.stringify(req.body) + '\r\n');
+    fs.writeSync(fd, JSON.stringify(req.body) + '\n');
     fs.closeSync(fd);
 
     // Call the Shell script
